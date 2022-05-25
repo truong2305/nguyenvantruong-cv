@@ -1,0 +1,56 @@
+.project {
+    padding-top: 80px;
+    color: #5f5950;
+    h1 {
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    color: #ffb03b;
+    }
+    &-box {
+        background: #222831;
+        color: white;
+        padding: 1.5rem;
+        border-radius: 5px;
+        height: 100%;
+        .project-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .project-info {
+           span {
+            font-family: 'Satisfy', cursive;
+            font-weight: bold;
+            letter-spacing: 0.05rem;
+            color: #ffb03b;
+            font-size: 2rem;
+           }
+    p {
+        margin-bottom: 0;
+
+    }
+    button {
+        margin-top: 1rem;
+        padding: 0.5rem 2rem;
+        background: #ffb74c;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        color: #222831;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover {
+            background: #ffad32;
+            color: rgb(0, 0, 0);
+        }
+    }
+        }
+    }
+}

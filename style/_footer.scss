@@ -1,0 +1,28 @@
+footer {
+    margin-top: 80px;
+    background: #222831;
+    overflow: hidden;
+    h3 {
+        font-family: 'Satisfy', cursive;
+    }
+    ul {
+        li {
+            a {
+                transition: 0.4s;
+                &:hover {
+                    color: #ffb03b;
+                }
+            }
+        }
+    }
+    .connect-items {
+        li i {
+            font-size: 1.5rem;
+        }
+    }
+    .footer-bottom {
+        font-family: 'Satisfy', cursive;
+        color: #ffb03b;
+        font-size: 1.2rem;
+    }
+}

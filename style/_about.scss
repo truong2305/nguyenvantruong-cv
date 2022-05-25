@@ -1,0 +1,24 @@
+.about {
+    color: black;
+    background: #fffaf3;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    h3 {
+        color: #5f5950;
+    }
+    &-details {
+        div {
+            display: flex;
+            margin-bottom: 1rem;
+            strong {
+                flex: 0.3;
+            }
+            span {
+                flex: 0.7;
+                text-align: left;
+            }
+        }
+    }
+}

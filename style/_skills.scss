@@ -1,0 +1,42 @@
+.skills {
+    padding-top: 80px;
+    color: #5f5950;
+    h1 {
+        font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    span {
+        font-size: 0.6em;
+        opacity: 0.8;
+    }
+    }
+    .skill-box {
+        box-shadow: 0 0 10px 0px rgb(216, 216, 216);
+        padding: 2rem;
+        transition: 0.4s;
+        border-radius: 5px;
+        height: 100%;
+        text-align: center;
+        .skill-logo {
+            i {
+                font-size: 50px;
+            }
+        }
+        span {
+        font-family: 'Satisfy', cursive;
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin: 0.5rem 0;
+            display: block;
+        }
+        p {
+            margin-bottom: 0;
+        }
+       &:hover {
+           background: #ffb03b;
+           box-shadow: 0 0 10px 0px #ffb03b;
+           color: white;
+       }
+
+    }
+}
