@@ -66,8 +66,8 @@ img {
   position: absolute;
   bottom: 30px;
   left: 50%;
-  -webkit-animation: down 1s 12s infinite;
-          animation: down 1s 12s infinite;
+  -webkit-animation: down 1s infinite;
+          animation: down 1s infinite;
   cursor: pointer;
 }
 
@@ -104,8 +104,8 @@ img {
 /** @format */
 .home {
   height: 100vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.4))), url(../imgs/bg2.jpg);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../imgs/bg2.jpg);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.4))), url(../imgs/bg.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../imgs/bg.jpg);
   background-size: cover;
   background-position: center;
   font-size: 80px;
@@ -123,14 +123,16 @@ img {
 }
 
 .home p {
-  font-size: 0.25em;
+  font-size: 0.2em;
 }
 
 .home .navbar-show {
   width: 40%;
   position: fixed;
   height: 100%;
-  background: black;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   right: 0;
   visibility: hidden;
   opacity: 0;
@@ -270,7 +272,6 @@ header .logo {
 
 .about {
   color: black;
-  background: #fffaf3;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,7 +422,9 @@ header .logo {
 
 footer {
   margin-top: 80px;
-  background: #222831;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.4))), url(../imgs/f.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../imgs/f.jpg);
+  background-size: auto 100%;
   overflow: hidden;
 }
 
