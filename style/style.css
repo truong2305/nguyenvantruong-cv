@@ -311,14 +311,15 @@ header .logo {
   color: #5f5950;
 }
 
-.skills h2 {
+.skills h3 {
   font-family: 'Satisfy', cursive;
   font-weight: bold;
   letter-spacing: 0.05rem;
   color: #ffb03b;
+  font-size: 2rem;
 }
 
-.skills h2 span {
+.skills h3 span {
   font-size: 0.6em;
   opacity: 0.8;
   color: #5f5950;
@@ -363,11 +364,12 @@ header .logo {
   color: #5f5950;
 }
 
-.project h2 {
+.project h3 {
   font-family: 'Satisfy', cursive;
   font-weight: bold;
   letter-spacing: 0.05rem;
   color: #ffb03b;
+  font-size: 2rem;
 }
 
 .project-box {
