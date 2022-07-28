@@ -7,9 +7,7 @@ let scrollStyle = element => document.getElementById(element).scrollIntoView({be
 let hiddenNavbar = () =>  showNavbarClassList.remove('open-navbar')
 
 let mode = document.getElementById("mode")
-
-const getTheme = () => {
-    let theme = localStorage.getItem("theme")
+let theme = localStorage.getItem("theme")
     if(theme) {
         document.documentElement.setAttribute('data-theme', theme)
         if(theme === "dark") {
@@ -17,9 +15,10 @@ const getTheme = () => {
         } else {
             mode.innerHTML = '<i class="fas fa-sun"></i>'
         }
+    } else {
+        localStorage.setItem("theme", "light")
+        mode.innerHTML = '<i class="fas fa-sun"></i>'
     }
-}
-
 mode.onclick = () => {
     let theme = localStorage.getItem("theme")
     if(!theme) {
