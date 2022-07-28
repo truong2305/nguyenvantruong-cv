@@ -30,13 +30,14 @@ header {
         font-weight: 600;
         padding: 1rem 1.5rem;
         cursor: pointer;
-        &:hover {
-          color: red;
+        @media (min-width: 991.9px) {
+          &:hover {
+            color: red;
+          }
         }
       }
       .mode {
         color: var(--btnColor);
-
         @media (min-width: 991.9px) {
           border-radius: 6px;
           font-size: 1.25rem;
@@ -54,7 +55,6 @@ header {
             color: white;
           }
         }
-       
       }
       .homebar {
         color: red;

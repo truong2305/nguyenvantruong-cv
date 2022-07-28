@@ -201,8 +201,10 @@ header .navbar ul li {
   cursor: pointer;
 }
 
-header .navbar ul li:hover {
-  color: red;
+@media (min-width: 991.9px) {
+  header .navbar ul li:hover {
+    color: red;
+  }
 }
 
 header .navbar ul .mode {
