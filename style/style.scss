@@ -1,18 +1,97 @@
 /** @format */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Satisfy&display=swap");
-html,
-body {
-  color: white;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+html {
+  --bg: #ecf0f3;
+  --color: #212428;
+  --btBg : linear-gradient(145deg, #d8e1e7, #ffffff);
+  --boxShadow : 5px 5px 15px #c5cfe0, -5px -5px 15px #ffffff;
+  --btnColor : red;
+  @media (max-width:767.9px) {
+    font-size: 14px;
+  }
 }
+html[data-theme="dark"] {
+  --bg: #212428;
+  --color: #ecf0f3;
+  --btBg : linear-gradient(145deg, #1e2024, #23272b);
+  --boxShadow : 5px 5px 15px #1c1e22, -5px -5px 15px #262a2e;
+  --btnColor : yellow
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--bg);
+  color: var(--color);
+  transition: all 0.3s;
+}
+
 ul {
   list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 a {
   color: inherit;
   &:hover {
     color: inherit;
     text-decoration: none;
+  }
+}
+h1.title {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 22px;
+  span {
+    color: red;
+  }
+  .span {
+    color: inherit;
+    font-size: 0.75em;
+  }
+}
+h2.title {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--color);
+  margin-bottom: 100px;
+}
+h3.title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  position: relative;
+  background-color: var(--bg);
+  padding: 1rem 0;
+}
+h4.title {
+  font-size: 1.25rem;
+  line-height: 39px;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+p {
+  letter-spacing: 1px;
+}
+
+@media (max-width:767.9px) {
+  h1.title {
+    font-size: 2rem;
+  }
+  h2.title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  h3.title {
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+  }
+}
+@media (max-width:576.9px) {
+  h1.title {
+    font-size: 1.5rem;
+  }
+  h2.title {
+    font-size: 1.75rem;
   }
 }
 img {
@@ -25,47 +104,33 @@ img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color:#033c91;
-  opacity: 0.7;
+  background: var(--btBg);
+  box-shadow: var(--boxShadow);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: 0.4s;
-  visibility: hidden;
+  transition: 0.3s;
   z-index: 100;
+  i {
+    font-size: 1.2rem;
+    color: red;
+  }
   &:hover {
-    opacity: 1 !important;
-
+    background: red;
+    i {
+      color: white;
+    }
   }
   @media (max-width: 576.9px) {
-      width: 40px;
-      height: 40px;
-      bottom: 20px;
-      right: 20px;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
   }
 }
-.down {
-    font-size: 1.8rem;
-    display: inline-block;
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    animation: down 1s infinite;
-    cursor: pointer;
-}
-@keyframes down {
-    0% {
-        transform: translateY(0)
-    }
-    50% {
-        transform: translateY(-5px)
-    }
-    100% {
-        transform: translateY(0)
-    }
-}
-@import "./home";
+@import "./header";
+@import "./banner";
 @import "./about";
 @import "./skills";
 @import "./project";

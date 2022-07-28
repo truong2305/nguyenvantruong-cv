@@ -1,45 +1,57 @@
-.skills {
-    padding-top: 80px;
-    color: #5f5950;
-    h3 {
-        font-family: 'Satisfy', cursive;
-    font-weight: bold;
-    letter-spacing: 0.05rem;
-    color: #ffb03b;
-        font-size: 2rem;
-    span {
-        font-size: 0.6em;
-        opacity: 0.8;
-        color: #5f5950;
+/** @format */
+
+#skills {
+  padding-top: 120px;
+  ul {
+    flex-wrap: wrap;
+    li {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+      letter-spacing: 2px;
+      img {
+        width: 50px;
+        margin-right: 1rem;
+        height: auto;
+      }
     }
+  }
+  @media (max-width:991.9px) {
+    ul {
+      li {
+        width: calc( 100% / 3 );
+        img {
+          width: 40px;
+          margin-right: 0.5rem;
+        }
+      }
     }
-    .skill-box {
-        box-shadow: 0 0 10px 0px rgb(216, 216, 216);
-        padding: 2rem;
-        transition: 0.4s;
-        border-radius: 5px;
-        height: 100%;
+  }
+  @media (max-width:767.9px) {
+    ul {
+      li {
+        width: calc( 100% / 3 );
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+  @media (max-width:576.9px) {
+    ul {
+      li {
         text-align: center;
-        .skill-logo {
-            i {
-                font-size: 50px;
-            }
+        div {
+          margin: 0 auto;
         }
         span {
-        font-family: 'Satisfy', cursive;
-            font-weight: bold;
-            font-size: 1.4rem;
-            margin: 0.5rem 0;
-            display: block;
+          display: block;
         }
-        p {
-            margin-bottom: 0;
+        img {
+          margin-right: 0;
         }
-       &:hover {
-           background: #ffb03b;
-           box-shadow: 0 0 10px 0px #ffb03b;
-           color: white;
-       }
-
+      }
     }
+  }
 }
