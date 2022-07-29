@@ -112,6 +112,8 @@ img {
   cursor: pointer;
   transition: 0.3s;
   z-index: 100;
+  opacity: 0;
+  visibility: hidden;
   i {
     font-size: 1.2rem;
     color: red;

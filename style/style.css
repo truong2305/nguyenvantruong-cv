@@ -138,6 +138,8 @@ img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 100;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .back-top i {
