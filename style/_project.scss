@@ -2,6 +2,7 @@
 
 .project {
   padding-top: 120px;
+  overflow-y: hidden;
   &-name,
   &-description {
     background: var(--btBg);

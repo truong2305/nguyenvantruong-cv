@@ -3,6 +3,7 @@
 header {
   position: absolute;
   width: 100%;
+  overflow-y: hidden;
   letter-spacing: 2px;
   .logo {
     font-size: 1.25rem;

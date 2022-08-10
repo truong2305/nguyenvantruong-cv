@@ -168,6 +168,7 @@ img {
 header {
   position: absolute;
   width: 100%;
+  overflow-y: hidden;
   letter-spacing: 2px;
 }
 
@@ -269,6 +270,7 @@ header .navbar-btn span {
 /** @format */
 .home {
   min-height: 100vh;
+  overflow-y: hidden;
 }
 
 .home .description {
@@ -399,8 +401,26 @@ header .navbar-btn span {
           transform: translateX(0);
 }
 
+.home .btn-download {
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: var(--btBg);
+  color: var(--color);
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+.home .btn-download:hover {
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
 #resume {
   padding-top: 120px;
+  overflow-y: hidden;
 }
 
 #resume ul {
@@ -529,6 +549,7 @@ header .navbar-btn span {
 /** @format */
 #skills {
   padding-top: 120px;
+  overflow-y: hidden;
 }
 
 #skills ul {
@@ -591,6 +612,7 @@ header .navbar-btn span {
 /** @format */
 .project {
   padding-top: 120px;
+  overflow-y: hidden;
 }
 
 .project-name, .project-description {

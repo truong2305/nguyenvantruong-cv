@@ -2,110 +2,115 @@
 
 <!DOCTYPE html>
 <html lang="vi-VN">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Nguyễn Văn Trường, front-end, back-end developer</title>
-    <meta
-      name="description"
-      content="Nguyễn Văn Trường, nguyenvantruong, Nguyen Van Truong, front-end, back-end developer"
-    />
-    <meta
-      name="keywords"
-      content="Nguyễn Văn Trường, nguyenvantruong, Nguyen Van Truong, front-end, back-end developer"
-    />
-    <link rel="shortcut icon" href="./imgs/logo_page.png" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style/style.css" />
-    <script src="https://kit.fontawesome.com/8f30234327.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="px-sm-5 px-3 py-4 d-flex justify-content-between">
-        <div class="logo wow animate__animated animate__fadeIn">
-          <a href="" class="d-flex align-items-center">
-            <div class="img mr-3"><img src="./imgs/bg.jpg" alt="" /></div>
-            TRUONG
-          </a>
-        </div>
-        <div class="d-flex justify-content-center align-items-center">
-          <nav class="navbar">
-            <ul class="d-flex align-items-center">
-              <li class="homebar animate__animated animate__fadeIn d-lg-block d-none">HOME</li>
-              <li class="wow animate__animated animate__fadeIn d-lg-block d-none" data-wow-delay="100ms" onclick="scrollStyle('resume')">
-                RESUME
-              </li>
-              <li class="wow animate__animated animate__fadeIn d-lg-block d-none" data-wow-delay="200ms" onclick="scrollStyle('skills')">
-                SKILLS
-              </li>
-              <li class="wow animate__animated animate__fadeIn d-lg-block d-none" data-wow-delay="300ms" onclick="scrollStyle('project')">
-                PROJECTS
-              </li>
-              <li class="wow animate__animated animate__fadeIn d-lg-block d-none" data-wow-delay="400ms" onclick="scrollStyle('footer')">
-                CONTACT
-              </li>
-              <li id="mode" class="mode wow animate__animated animate__fadeIn" data-wow-delay="500ms"></li>
-            </ul>
-            <div class="navbar-btn d-flex d-lg-none" onclick="showNavbar()">
-              <span></span><span class="my-2"></span><span></span>
-            </div>
-          </nav>
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Nguyễn Văn Trường, front-end, back-end developer</title>
+  <meta name="description"
+    content="Nguyễn Văn Trường, nguyenvantruong, Nguyen Van Truong, front-end, back-end developer" />
+  <meta name="keywords"
+    content="Nguyễn Văn Trường, nguyenvantruong, Nguyen Van Truong, front-end, back-end developer" />
+  <link rel="shortcut icon" href="./imgs/logo_page.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <script src="https://kit.fontawesome.com/8f30234327.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="./js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="px-sm-5 px-3 py-4 d-flex justify-content-between">
+      <div class="logo wow animate__animated animate__fadeIn">
+        <a href="" class="d-flex align-items-center">
+          <div class="img mr-3"><img src="./imgs/bg.jpg" alt="logo" /></div>
+          TRUONG
+        </a>
       </div>
-    </header>
-    <div class="back-top" onclick="scrollStyle('home')" id="back-to-top">
-      <i class="fas fa-arrow-up"></i>
+      <div class="d-flex justify-content-center align-items-center">
+        <nav class="navbar">
+          <ul class="d-flex align-items-center">
+            <li class="homebar wow animate__animated animate__fadeIn d-lg-block d-none">HOME</li>
+            <li class="wow animate__animated animate__fadeIn d-lg-block d-none" data-wow-delay="100ms"
+              onclick="scrollStyle('resume')">
+              RESUME
+            </li>
+            <li class="wow animate__animated animate__fadeIn d-lg-block d-none" data-wow-delay="200ms"
+              onclick="scrollStyle('skills')">
+              SKILLS
+            </li>
+            <li class="wow animate__animated animate__fadeIn d-lg-block d-none" data-wow-delay="300ms"
+              onclick="scrollStyle('project')">
+              PROJECTS
+            </li>
+            <li class="wow animate__animated animate__fadeIn d-lg-block d-none" data-wow-delay="400ms"
+              onclick="scrollStyle('footer')">
+              CONTACT
+            </li>
+            <li id="mode" class="mode wow animate__animated animate__fadeIn" data-wow-delay="500ms"></li>
+          </ul>
+          <div class="navbar-btn d-flex d-lg-none" onclick="showNavbar()">
+            <span></span><span class="my-2"></span><span></span>
+          </div>
+        </nav>
+      </div>
     </div>
-    <section class="home d-flex justify-content-center align-items-center" id="home">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-8 col-12">
-            <h1 class="title wow animate__animated animate__fadeInUp">
-              Hi, I’m <span>Nguyen Van Truong</span><br /><span class="span">Web developer.</span>
-            </h1>
-            <p class="description wow animate__animated animate__fadeInUp" data-wow-delay="200ms">
-              I have a dream to become a professional programmer, so I am trying and studying hard every day. I hope
-              that after reviewing my resume, you will give me the opportunity to meet and interview with the position
-              of Fresher.
-            </p>
-            <div class="main-skill">
-              <span class="wow animate__animated animate__fadeInUp" data-wow-delay="200ms">Main skill</span>
-              <ul class="d-flex align-items-center">
-                <li class="wow animate__animated animate__fadeInUp" data-wow-delay="200ms">
-                  <img src="./imgs/vue.png" alt="" />
-                </li>
-                <li class="mx-3 wow animate__animated animate__fadeInUp" data-wow-delay="300ms">
-                  <img class="img" src="./imgs/mysql.png" alt="" />
-                </li>
-                <li class="wow animate__animated animate__fadeInUp" data-wow-delay="400ms">
-                  <img src="./imgs/java.png" alt="" />
-                </li>
-              </ul>
-            </div>
+  </header>
+  <div class="back-top" onclick="scrollStyle('home')" id="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  <section class="home d-flex justify-content-center align-items-center" id="home">
+    <div class="container">
+      <div class="row ">
+        <div class="col-xl-8 col-12">
+          <h1 class="title wow animate__animated animate__fadeInUp">
+            Hi, I’m <span>Nguyen Van Truong</span><br /><span class="span">Web developer.</span>
+          </h1>
+          <p class="description wow animate__animated animate__fadeInUp" data-wow-delay="200ms">
+            I have a dream to become a professional programmer, so I am trying and studying hard every day. I always encourage myself to expand my programming skills.
+            Motivated to advanced and expand my skill set through targeted and challengeing projects.
+
+          </p>
+          <div class="main-skill">
+            <span class="wow animate__animated animate__fadeInUp" data-wow-delay="200ms">Main skill</span>
+            <ul class="d-flex align-items-center">
+              <li class="wow animate__animated animate__fadeInUp" data-wow-delay="200ms">
+                <img src="./imgs/vue.png" alt="vuejs" />
+              </li>
+              <li class="mx-3 wow animate__animated animate__fadeInUp" data-wow-delay="300ms">
+                <img class="img" src="./imgs/mysql.png" alt="mysql" />
+              </li>
+              <li class="wow animate__animated animate__fadeInUp" data-wow-delay="400ms">
+                <img src="./imgs/java.png" alt="java" />
+              </li>
+            </ul>
           </div>
-          <div class="col-4">
-            <div>
-              <img src="" alt="" />
-            </div>
+        </div>
+        <div class="col-4 d-none d-xl-block">
+          <div class="text-center d-flex flex-column justify-content-between" style="height: 100%;">
+            <img class="wow animate__animated animate__zoomIn" data-wow-delay="200ms"
+              src="./imgs/bannerBg.gif" alt="banner">
+            <a href="./file/cv.pdf" target="_blank">
+              <button class="btn-download wow animate__animated animate__fadeInUp" data-wow-delay="400ms">Download my
+                cv</button>
+            </a>
           </div>
         </div>
       </div>
-      <div class="navbar-show d-block d-lg-none" id="showNavbar">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="img"><img src="./imgs/bg.jpg" alt=""></div>
-          <div class="exit" onclick="hiddenNavbar()" id="exit">
-            <i class="fas fa-times"></i>
-          </div>
+    </div>
+    <div class="navbar-show d-block d-lg-none" id="showNavbar">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="img"><img src="./imgs/bg.jpg" alt="logo"></div>
+        <div class="exit" onclick="hiddenNavbar()" id="exit">
+          <i class="fas fa-times"></i>
         </div>
-        <h4 class="mt-4 title">Hi, I’m Nguyen Van Truong</p>
+      </div>
+      <h4 class="mt-4 title">Hi, I’m Nguyen Van Truong</p>
 
         <div class="my-5 border-top"></div>
         <nav>
@@ -117,260 +122,256 @@
             <li class="ml-0 mt-3" onclick="scrollStyle('footer')">CONTACT</li>
           </ul>
         </nav>
-      </div>
-    </section>
-    <section id="resume">
-      <div class="container">
-        <h2 class="title wow animate__animated animate__fadeInUp">My resume</h2>
-        <ul>
-          <li>
-            <h3 class="title text-center">EDUCATION</h3>
-          </li>
-          <li>
-            <div class="d-flex">
-              <div class="timeline timeline-right wow animate__animated animate__fadeInUp">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <h4 class="title">
-                    Student
-                    <span class="d-block">Da Nang University of Science and Technology </span>
-                    <span class="d-block">(2018 - 2023)</span>
-                  </h4>
-                  <p>Studying Electronic and Telecommunication at Da Nang University of Science and Technology</p>
-                </div>
+    </div>
+  </section>
+  <section id="resume">
+    <div class="container">
+      <h2 class="title wow animate__animated animate__fadeInUp">My resume</h2>
+      <ul>
+        <li>
+          <h3 class="title text-center">EDUCATION</h3>
+        </li>
+        <li>
+          <div class="d-flex">
+            <div class="timeline timeline-right wow animate__animated animate__fadeInUp">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4 class="title">
+                  Student
+                  <span class="d-block">Da Nang University of Science and Technology </span>
+                  <span class="d-block">(2018 - 2023)</span>
+                </h4>
+                <p>Studying Electronic and Telecommunication at Da Nang University of Science and Technology</p>
               </div>
             </div>
-          </li>
-          <li>
-            <div class="d-flex">
-              <div class="timeline wow animate__animated animate__fadeInUp">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <h4 class="title">
-                    Front End course
-                    <span class="d-block">Genetic Da Nang</span>
-                    <span class="d-block">(2/2021 - 8/2021)</span>
-                  </h4>
-                  <p>
-                    Finishing Front End course at Genetic Da Nang<br />
-                    Learning Html, Css, Bootstrap, Jquery, Javascript, Vuejs,...
-                  </p>
-                </div>
+          </div>
+        </li>
+        <li>
+          <div class="d-flex">
+            <div class="timeline wow animate__animated animate__fadeInUp">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4 class="title">
+                  Front End course
+                  <span class="d-block">Genetic Da Nang</span>
+                  <span class="d-block">(2/2021 - 8/2021)</span>
+                </h4>
+                <p>
+                  Finishing Front End course at Genetic Da Nang<br />
+                  Learning Html, Css, Bootstrap, Jquery, Javascript, Vuejs,...
+                </p>
               </div>
             </div>
-          </li>
-          <li>
-            <div class="d-flex">
-              <div class="timeline timeline-right wow animate__animated animate__fadeInUp">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <h4 class="title">
-                    Student
-                    <span class="d-block">Vinh Loc high school</span>
-                    <span class="d-block">(2015 - 2018)</span>
-                  </h4>
-                  <p>Vinh Loc High School is a high school in Phu Loc District, Thua Thien Hue Province</p>
-                </div>
+          </div>
+        </li>
+        <li>
+          <div class="d-flex">
+            <div class="timeline timeline-right wow animate__animated animate__fadeInUp">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4 class="title">
+                  Student
+                  <span class="d-block">Vinh Loc high school</span>
+                  <span class="d-block">(2015 - 2018)</span>
+                </h4>
+                <p>Vinh Loc High School is a high school in Phu Loc District, Thua Thien Hue Province</p>
               </div>
             </div>
-          </li>
-          <li>
-            <h3 class="title text-center wow animate__animated animate__fadeInUp">WORK EXPERIENCE</h3>
-          </li>
-          <li>
-            <div class="d-flex">
-              <div class="timeline wow animate__animated animate__fadeInUp">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <h4 class="title">
-                    Intern developer
-                    <span class="d-block">Vietnam Internet Network Information Center</span>
-                    <span class="d-block">(6/2022 - 8/2022)</span>
-                  </h4>
-                  <p>Java training with Spring framework, Spring Boot, REST, JPA, Hibernate,...</p>
-                </div>
+          </div>
+        </li>
+        <li>
+          <h3 class="title text-center wow animate__animated animate__fadeInUp">WORK EXPERIENCE</h3>
+        </li>
+        <li>
+          <div class="d-flex">
+            <div class="timeline wow animate__animated animate__fadeInUp">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4 class="title">
+                  Intern developer
+                  <span class="d-block">Vietnam Internet Network Information Center</span>
+                  <span class="d-block">(6/2022 - 8/2022)</span>
+                </h4>
+                <p>Java training with Spring framework, Spring Boot, REST, JPA, Hibernate,...</p>
               </div>
             </div>
-          </li>
-          <li>
-            <div class="d-flex">
-              <div class="timeline timeline-right wow animate__animated animate__fadeInUp">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <h4 class="title">
-                    Technical skills
-                    <span class="d-block"></span>
-                    <span class="d-block"></span>
-                  </h4>
-                  <p>
-                    I have experience working with Laravel framework, Json, RESTful API, pagination, shopping cart,...
-                    CRUD with Spring Boot, Hibernate, MySQL
-                  </p>
-                </div>
+          </div>
+        </li>
+        <li>
+          <div class="d-flex">
+            <div class="timeline timeline-right wow animate__animated animate__fadeInUp">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4 class="title">
+                  Technical skills
+                  <span class="d-block"></span>
+                  <span class="d-block"></span>
+                </h4>
+                <p>
+                  I have experience working with Laravel framework, Reactjs, Json, RESTful API,...
+                  CRUD with Spring Boot, Hibernate, MySQL
+                </p>
               </div>
             </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section id="skills">
-      <div class="container">
-        <h2 class="title text-center wow animate__animated animate__fadeInUp">Skills</h2>
-        <ul class="d-flex">
-          <li class="wow animate__animated animate__fadeInUp">
-            <div><img src="./imgs/html.svg" alt="" /><span>Html</span></div>
-          </li>
-          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="100ms">
-            <div><img src="./imgs/css.png" alt="" /><span>Css</span></div>
-          </li>
-          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="200ms">
-            <div><img src="./imgs/js.svg" alt="" /><span>Javascript</span></div>
-          </li>
-          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="300ms">
-            <div><img src="./imgs/bootstrap.png" alt="" /><span>Bootstrap</span></div>
-          </li>
-          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="00ms">
-            <div><img src="./imgs/java.png" alt="" /><span>Java</span></div>
-          </li>
-          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="100ms">
-            <div><img src="./imgs/vue.png" alt="" /><span>Vuejs</span></div>
-          </li>
-          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="200ms">
-            <div><img src="./imgs/react.png" alt="" /><span>ReactJs</span></div>
-          </li>
-          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="300ms">
-            <div><img src="./imgs/sass.png" alt="" /><span>Sass</span></div>
-          </li>
-          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="100ms">
-            <div><img src="./imgs/spring.png" alt="" /><span>Spring (basic)</span></div>
-          </li>
-          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="200ms">
-            <div><img src="./imgs/mysql.png" alt="" /><span>My SQL</span></div>
-          </li>
-        </ul>
-      </div>
-    </section>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="container">
+      <h2 class="title text-center wow animate__animated animate__fadeInUp">Skills</h2>
+      <ul class="d-flex">
+        <li class="wow animate__animated animate__fadeInUp">
+          <div><img src="./imgs/html.svg" alt="html" /><span>Html</span></div>
+        </li>
+        <li class="wow animate__animated animate__fadeInUp" data-wow-delay="100ms">
+          <div><img src="./imgs/css.png" alt="css" /><span>Css</span></div>
+        </li>
+        <li class="wow animate__animated animate__fadeInUp" data-wow-delay="200ms">
+          <div><img src="./imgs/js.svg" alt="JavaScript" /><span>JavaScript</span></div>
+        </li>
+        <li class="wow animate__animated animate__fadeInUp" data-wow-delay="300ms">
+          <div><img src="./imgs/bootstrap.png" alt="bootstrap" /><span>Bootstrap</span></div>
+        </li>
+        <li class="wow animate__animated animate__fadeInUp" data-wow-delay="00ms">
+          <div><img src="./imgs/java.png" alt="java" /><span>Java</span></div>
+        </li>
+        <li class="wow animate__animated animate__fadeInUp" data-wow-delay="100ms">
+          <div><img src="./imgs/vue.png" alt="vuejs" /><span>VueJs</span></div>
+        </li>
+       
+        <li class="wow animate__animated animate__fadeInUp" data-wow-delay="300ms">
+          <div><img src="./imgs/sass.png" alt="sass" /><span>Sass</span></div>
+        </li>
+    
+        <li class="wow animate__animated animate__fadeInUp" data-wow-delay="200ms">
+          <div><img src="./imgs/mysql.png" alt="mysql" /><span>My SQL</span></div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <section class="project" id="project">
-      <div class="container">
-        <h2 class="title wow animate__animated animate__fadeInUp">Projects</h2>
-          <div class="row">
-            <div class="col-lg-5 d-none d-lg-block">
-              <div class="project-name wow animate__animated animate__fadeInUp">
-                <div style="border-radius: 6px; overflow: hidden;">
-                  <img src="./imgs/bh.jpg" alt="" />
-                </div>
-                <h4 class="title mt-4">Nội Thất Nam Cường</h4>
-                <div>
-                  <a href="https://noithatnamcuong.netlify.app/" target="_blank">noithatnamcuong.netlify.app</a>
-                </div>
-              </div>
+  <section class="project" id="project">
+    <div class="container">
+      <h2 class="title wow animate__animated animate__fadeInUp">Projects</h2>
+      <div class="row">
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="project-name wow animate__animated animate__fadeInUp">
+            <div style="border-radius: 6px; overflow: hidden;">
+              <img src="./imgs/bh.jpg" alt="noithatnamcuong" />
             </div>
-            <div class="col-lg-7 col-12">
-              <div class="project-description wow animate__animated animate__fadeInUp">
-                <h5 class="title">
-                  E-Commerce Website
-                  <span class="d-block mt-3"> Apr 10, 2022 - Apr 22, 2022 </span>
-                </h5>
-                <div class="d-block d-lg-none">
-                  <a href="https://noithatnamcuong.netlify.app/" target="_blank">noithatnamcuong.netlify.app</a>
-                </div>
-                <div class="border-top my-4"></div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus facilis ducimus minus alias fugit
-                  dolores voluptatum adipisci inventore, quam sequi dignissimos eligendi quo minima porro deserunt
-                  ratione possimus! Temporibus, saepe!
-                </p>
-              </div>
-              <div class="mt-4 project-languages wow animate__animated animate__fadeInUp">
-                <h4 class="title">Languages</h4>
-                <ul class="d-flex">
-                  <li><span></span> Html</li>
-                  <li><span></span> Scss</li>
-                  <li><span></span> Vuejs</li>
-                  <li><span></span> Laravel</li>
-                  <li><span></span> MySQL</li>
-                </ul>
-              </div>
+            <h4 class="title mt-4">Nội Thất Nam Cường</h4>
+            <div>
+              <a href="https://noithatnamcuong.netlify.app/" target="_blank">noithatnamcuong.netlify.app</a>
             </div>
           </div>
-          <div class="row mt-5">
-            <div class="col-lg-5 d-none d-lg-block">
-              <div class="project-name wow animate__animated animate__fadeInUp">
-                <div style="border-radius: 6px; overflow: hidden;">
-                  <img src="./imgs/ac.png" alt="" />
-                </div>
-                <h4 class="title mt-4">AC BREAD</h4>
-                <div>
-                  <a href="https://truong2305.github.io/AC-BREAD/" target="_blank">truong2305.github.io/AC-BREAD</a>
-                </div>
-              </div>
+        </div>
+        <div class="col-lg-7 col-12">
+          <div class="project-description wow animate__animated animate__fadeInUp">
+            <h5 class="title">
+              E-Commerce Website
+              <span class="d-block mt-3"> Apr 10, 2022 - Apr 22, 2022 </span>
+            </h5>
+            <div class="d-block d-lg-none">
+              <a href="https://noithatnamcuong.netlify.app/" target="_blank">noithatnamcuong.netlify.app</a>
             </div>
-            <div class="col-lg-7 col-12">
-              <div class="project-description wow animate__animated animate__fadeInUp">
-                <h5 class="title">
-                  E-Commerce Website
-                  <span class="d-block mt-3"> Jul 12, 2021 - Jul 28, 2021 </span>
-                </h5>
-                <div class="d-block d-lg-none">
-                  <a href="https://truong2305.github.io/AC-BREAD/" target="_blank">truong2305.github.io/AC-BREAD</a>
-                </div>
-                <div class="border-top my-4"></div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus facilis ducimus minus alias fugit
-                  dolores voluptatum adipisci inventore, quam sequi dignissimos eligendi quo minima porro deserunt
-                  ratione possimus! Temporibus, saepe!
-                </p>
-              </div>
-              <div class="mt-4 project-languages wow animate__animated animate__fadeInUp">
-                <h4 class="title">Languages</h4>
-                <ul class="d-flex">
-                  <li><span></span> Html</li>
-                  <li><span></span> Scss</li>
-                  <li><span></span> Vuejs</li>
-                </ul>
-              </div>
+            <div class="border-top my-4"></div>
+            <p>
+              - Member : 01.
+             </p>
+            <p>
+              - Building API CRUD product, post, cart, admin login,...
+            </p>
+            <p>
+              - Source code backend <a href="https://github.com/truong2305/cnpm/tree/main/example-app" target="_blank">github.com/truong2305/cnpm</a>
+             </p>
+          </div>
+          <div class="mt-4 project-languages wow animate__animated animate__fadeInUp">
+            <h4 class="title">Languages</h4>
+            <ul class="d-flex">
+              <li><span></span> Html</li>
+              <li><span></span> Scss</li>
+              <li><span></span> Vuejs, Vuex</li>
+              <li><span></span> Laravel</li>
+              <li><span></span> MySQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="project-name wow animate__animated animate__fadeInUp">
+            <div style="border-radius: 6px; overflow: hidden;">
+              <img src="./imgs/ac.png" alt="ac bread" />
+            </div>
+            <h4 class="title mt-4">AC BREAD</h4>
+            <div>
+              <a href="https://truong2305.github.io/AC-BREAD/" target="_blank">truong2305.github.io/AC-BREAD</a>
             </div>
           </div>
+        </div>
+        <div class="col-lg-7 col-12">
+          <div class="project-description wow animate__animated animate__fadeInUp">
+            <h5 class="title">
+              Clone Website Templates
+              <span class="d-block mt-3"> Jul 12, 2021 - Jul 28, 2021 </span>
+            </h5>
+            <div class="d-block d-lg-none">
+              <a href="https://truong2305.github.io/AC-BREAD/" target="_blank">truong2305.github.io/AC-BREAD</a>
+            </div>
+            <div class="border-top my-4"></div>
+            <p>
+              - Member : 01.
+             </p>
+            <p>
+             - Clone website from PSD file to html, css.
+            </p>
+            <p>
+              - Source code <a href="https://github.com/truong2305/AC-BREAD" target="_blank">github.com/truong2305/AC-BREAD</a>
+             </p>
+          </div>
+          <div class="mt-4 project-languages wow animate__animated animate__fadeInUp">
+            <h4 class="title">Languages</h4>
+            <ul class="d-flex">
+              <li><span></span> Html</li>
+              <li><span></span> Scss</li>
+              <li><span></span> VueJs</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </section>
-    <footer class="py-5 border-top" id="footer">
-      <div class="container text-center">
-        <h3 class="title mb-0 wow animate__animated animate__fadeInUp">Contact me</h3>
-        <ul
-          class="d-flex justify-content-center connect-items wow animate__animated animate__fadeInUp"
-          data-wow-delay="100ms"
-        >
-          <li class="mr-4">
-            <a href="https://www.facebook.com/truongnv2305" target="_blank"><img src="./imgs/fb.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="https://github.com/truong2305" target="_blank"><img src="./imgs/git.svg" alt="" /></a>
-          </li>
-        </ul>
-        <ul class="mt-5">
-          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="100ms">
-            <a
-              href="https://www.google.com/maps/place/H%C3%B2a+Kh%C3%A1nh+B%E1%BA%AFc,+Li%C3%AAn+Chi%E1%BB%83u,+%C4%90%C3%A0+N%E1%BA%B5ng,+Vi%E1%BB%87t+Nam/@16.0807317,108.1192176,14z/data=!3m1!4b1!4m5!3m4!1s0x31421f2e7704a1af:0x135f8793bd0ac466!8m2!3d16.0770582!4d108.1369375?hl=vi-VN"
-              target="_blank"
-              >Lien Chieu, Da Nang</a
-            >
-          </li>
-          <li class="my-3 wow animate__animated animate__fadeInUp" data-wow-delay="200ms">
-            <a href="tel:0355050374">+ 84 355 050 374</a>
-          </li>
-          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="300ms">
-            <a href="mailto:truongnv18dt1bkdn@gmail.com"
-              ><i class="far fa-envelope mr-2"></i>truongnv18dt1bkdn@gmail.com</a
-            >
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <script src="./js/main.js"></script>
-    <script src="./js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-  </body>
+    </div>
+  </section>
+  <footer class="py-5 border-top" id="footer">
+    <div class="container text-center">
+      <h3 class="title mb-0 wow animate__animated animate__fadeInUp">Contact me</h3>
+      <ul class="d-flex justify-content-center connect-items wow animate__animated animate__fadeInUp"
+        data-wow-delay="100ms">
+        <li class="mr-4">
+          <a href="https://www.facebook.com/truongnv2305" target="_blank"><img src="./imgs/fb.png" alt="facebook" /></a>
+        </li>
+        <li>
+          <a href="https://github.com/truong2305" target="_blank"><img src="./imgs/git.svg" alt="github" /></a>
+        </li>
+      </ul>
+      <ul class="mt-5">
+        <li class="wow animate__animated animate__fadeInUp" data-wow-delay="100ms">
+          <a href="https://www.google.com/maps/place/H%C3%B2a+Kh%C3%A1nh+B%E1%BA%AFc,+Li%C3%AAn+Chi%E1%BB%83u,+%C4%90%C3%A0+N%E1%BA%B5ng,+Vi%E1%BB%87t+Nam/@16.0807317,108.1192176,14z/data=!3m1!4b1!4m5!3m4!1s0x31421f2e7704a1af:0x135f8793bd0ac466!8m2!3d16.0770582!4d108.1369375?hl=vi-VN"
+            target="_blank">Lien Chieu, Da Nang</a>
+        </li>
+        <li class="my-3 wow animate__animated animate__fadeInUp" data-wow-delay="200ms">
+          <a href="tel:0355050374">+ 84 355 050 374</a>
+        </li>
+        <li class="wow animate__animated animate__fadeInUp" data-wow-delay="300ms">
+          <a href="mailto:truongnv18dt1bkdn@gmail.com"><i
+              class="far fa-envelope mr-2"></i>truongnv18dt1bkdn@gmail.com</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
